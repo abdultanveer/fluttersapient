@@ -7,5 +7,17 @@ void main() => runApp(MaterialApp(
           centerTitle: true,
           backgroundColor: Colors.green[500],
         ),
+
+        body: Center(
+            child: Text(
+                'welcome to sapient'
+            ),
+        ),
+
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {  },
+          child: Text('click'),
+        ),
+
       ),
     ));
