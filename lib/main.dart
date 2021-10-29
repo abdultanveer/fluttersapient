@@ -1,25 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
 
-void main() => runApp(MaterialApp(
+
+void main() => runApp(MyApp()); //fat arrow notation
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('appbar title'),
-          centerTitle: true,
-          backgroundColor: Colors.green[500],
+          title: const Text('Welcome to Flutter'),
         ),
-        body: Center(
-          child: Text(
-            'welcome to sapient',
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.blue,
-            ),
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Text('click'),
+        body: const Center(
+          child: Text('Hello World'),
         ),
       ),
-    ));
+    );
+  }
+}
