@@ -7,14 +7,16 @@ void main() => runApp(MyApp()); //fat arrow notation
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final wordPair = WordPair.random(); // Add this line.
+
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body:  Center(
+          child: Text(wordPair.asPascalCase),
         ),
       ),
     );
