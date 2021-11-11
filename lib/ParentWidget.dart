@@ -17,7 +17,7 @@ class _ParentWidgetState extends State<ParentWidget> {
   bool _active = false;
 
   void _handleTapboxChanged(bool newValue) {
-    setState(() {
+    setState(() { // setState is a async call
       _active = newValue;
     });
   }
