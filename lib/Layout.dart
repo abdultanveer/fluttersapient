@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp()); //fat arrow notation
 
-
-
 Widget titleSection = Container(
   child: Row(
     children: [
@@ -28,7 +26,10 @@ Widget titleSection = Container(
   ),
 );
 
-
+Widget textSection = const Padding(
+  padding: EdgeInsets.all(32),
+  child: Text('description about the lake'),
+);
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -43,7 +44,6 @@ class MyApp extends StatelessWidget {
         _buildButtonColumn(color, Icons.call, 'CALL'),
         _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
         _buildButtonColumn(color, Icons.share, 'SHARE')
-
       ],
     );
     return MaterialApp(
@@ -56,26 +56,30 @@ class MyApp extends StatelessWidget {
             children: [
               titleSection,
               buttonSection,
+              textSection,
             ],
           ),
         ));
   }
 
-  Column _buildButtonColumn(Color color, IconData iconData, String label){
+  Column _buildButtonColumn(Color color, IconData iconData, String label) {
     return Column(
       children: [
-        Icon(iconData, color: color,),
+        Icon(
+          iconData,
+          color: color,
+        ),
         Container(
-          child: Text(label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w400,
-            color: color,
-          ),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: color,
+            ),
           ),
         ),
       ],
     );
   }
-
 }
