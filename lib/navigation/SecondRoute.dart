@@ -13,7 +13,7 @@ class SecondRoute extends StatelessWidget {
         child: ElevatedButton(
           child: Text('go back'),
           onPressed: (){
-
+            Navigator.pop(context);
           },
         )
       ),
