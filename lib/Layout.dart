@@ -54,6 +54,7 @@ class MyApp extends StatelessWidget {
           ),
           body: Column(
             children: [
+              Image.asset('images/lake.jpg', height: 600, width: 240,fit: BoxFit.scaleDown,),
               titleSection,
               buttonSection,
               textSection,
