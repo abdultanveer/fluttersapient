@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersapient/navigation/FirstRoute.dart';
+import 'package:fluttersapient/navigation/routes/FirstRoute.dart';
 
 void main(){
   runApp(const MaterialApp(

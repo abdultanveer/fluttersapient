@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersapient/navigation/SecondRoute.dart';
+import 'package:fluttersapient/navigation/routes/SecondRoute.dart';
 
 class FirstRoute extends StatelessWidget {
   const FirstRoute({Key? key}) : super(key: key);
