@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'ScreenArguments.dart';
+import '../ScreenArguments.dart';
 
 // A Widget that extracts the necessary arguments from
 // the ModalRoute.

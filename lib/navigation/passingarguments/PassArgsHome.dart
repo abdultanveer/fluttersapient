@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'ExtractArgumentsScreen.dart';
-import 'HomeScreen.dart';
-import 'PassArgumentsScreen.dart';
+import 'passargsnamedroutes/ExtractArgumentsScreen.dart';
+import 'passargsnamedroutes/HomeScreen.dart';
+import 'passargsnamedroutes/PassArgumentsScreen.dart';
 import 'ScreenArguments.dart';
 
 void main() => runApp(const MyApp());

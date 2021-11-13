@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'ExtractArgumentsScreen.dart';
 import 'PassArgumentsScreen.dart';
-import 'ScreenArguments.dart';
+import '../ScreenArguments.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
