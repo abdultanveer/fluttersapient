@@ -9,8 +9,21 @@ void main() {
       var number = 35;
       favorites.add(number);
       var actual = favorites.items.contains(number);
-      var expected = true;
+      var expected = false;
       expect(actual,expected);
     });
+
+    test('removing an item', (){
+      var number = 45;
+      favorites.add(number);
+      var actual = favorites.items.contains(number);
+      var expected = true;
+      expect(actual, expected); //test whether the no was successfully added or not
+      favorites.remove(number);
+      var actul = favorites.items.contains(number);
+      var expectd = false;
+      expect(actul,expectd);
+    });
+
   });
 }
