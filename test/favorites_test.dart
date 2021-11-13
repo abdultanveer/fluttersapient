@@ -1,6 +1,8 @@
 import 'package:fluttersapient/sampleunittest/models/favorites.dart';
 import 'package:test/test.dart';
 
+late Favorites favoritesList;
+
 void main() {
   group('Testing App Provider', () {
     var favorites = Favorites();
@@ -26,4 +28,6 @@ void main() {
     });
 
   });
+
 }
+
