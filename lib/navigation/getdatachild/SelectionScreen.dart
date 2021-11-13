@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'dart:developer' as developer;
+
 
 class SelectionScreen extends StatelessWidget {
   const SelectionScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    developer.log('message- build', name: 'getdatachild-SelectionScreen');
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pick an option'),

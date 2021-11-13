@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:developer' as developer;
 
 import 'SelectionButton.dart';
 
@@ -7,6 +8,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    developer.log('message- build', name: 'getdatachild-HomeScreen');
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Returning Data Demo'),

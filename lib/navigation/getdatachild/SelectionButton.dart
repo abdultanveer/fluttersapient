@@ -1,4 +1,4 @@
-
+import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
 
 import 'SelectionScreen.dart';
@@ -7,6 +7,8 @@ class SelectionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    developer.log('message- build', name: 'getdatachild-SelectionScreen');
+
     return ElevatedButton(
       onPressed: () {
         _navigateAndDisplaySelection(context);
